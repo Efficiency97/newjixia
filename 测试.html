@@ -4,16 +4,46 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .traingle {
-            width: 0;
-            height: 0;
-            border: 12px solid transparent;
-            border-left-color:#ffbf08;
+        /*button {*/
+            /*background: none;*/
+            /*border: 0;*/
+            /*box-sizing: border-box;*/
+            /*box-shadow: inset 0 0 0 2px #f45e61;*/
+            /*color: #f45e61;*/
+            /*font-size: inherit;*/
+            /*font-weight: 700;*/
+            /*margin: 1em;*/
+            /*padding: 1em 2em;*/
+            /*text-align: center;*/
+            /*text-transform: capitalize;*/
+            /*position: relative;*/
+            /*vertical-align: middle;*/
+        /*}*/
+        /*button::before, button::after {*/
+            /*box-sizing: border-box;*/
+            /*content: '';*/
+            /*position: absolute;*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+        /*}*/
+
+        .kk{
+            width: 10px;
+            height: 100px;
+            background-color: red;
+            transition: width 1s;
         }
 
     </style>
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
-<div class="traingle"></div>
+<div class="kk"></div>
+<button>hhhh</button>
+<script>
+	$('button').hover(function () {
+		$('.kk').css('width','200px')
+	})
+</script>
 </body>
 </html>

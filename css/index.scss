@@ -21,19 +21,18 @@ $backcolor: #ffbf08;
 }
 .logo-area{
   .logo_bgc{
-    position: relative;
-    width:30%;
+    width:550px;
     height:80px;
     background-color: $backcolor;
     position: absolute;
     top: 0;
     z-index: 51;
-    @media screen and (min-width:950px){
-      width: 30%;
-    }
-    @media screen and (max-width:950px){
-      width:200px;
-    }
+    //@media screen and (min-width:950px){
+    //  width: 30%;
+    //}
+    //@media screen and (max-width:950px){
+    //  width:300px;
+    //}
   }
   .logo_bgc:after{
     position: absolute;
@@ -52,13 +51,54 @@ $backcolor: #ffbf08;
     width: 100% ;
     height: 50px;
     background-color: rgba(82, 82, 82, 0.9);
-    position: absolute;
-    top: 30px;
     z-index: 50;
+    top: 30px;
+    position: absolute;
+    transition: width .3s linear;
+  }
+  .page_item{
+    margin-left: 650px;
+    .page_border{
+      display:block;
+      width: 0px;
+      height:4px;
+      background: $backcolor;
+      position:absolute;
+      left: 0px;
+      bottom: 0;
+      transition:width .3s linear;
+    }
+    li{
+      float: left;
+      font-size: 22px;
+      line-height:50px;
+      margin-right: 60px;
+    }
+    a{
+      color: #ffffff;
+      cursor: pointer;
+    }
   }
 }
-.login－area{
+.log-area{
   ul{
-
+    margin-right: 30px;
+    @media screen and (max-width: 950px) {
+          color: $backcolor;
+  display: none;
+    }
+    .log_list{
+      float: right;
+      font-size:20px;
+      z-index: 101;
+      margin-right: 20px;
+      a{
+        color: $backcolor;
+        cursor: pointer;
+      }
+    }
+    .registration{
+      color: #fff !important;
+    }
   }
 }
