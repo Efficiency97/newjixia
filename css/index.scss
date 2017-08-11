@@ -157,12 +157,67 @@ $backcolor: #ffbf08;
   height: 420px;
   background-color: #666;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   ul.banner-content{
-    width: 100%;
+    width:11520px;
     height: 100%;
+    overflow-y: hidden;
     li{
       float: left;
+    }
+  }
+  .next,
+  .prev{
+    position: absolute;
+    top: 200px;
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    opacity:0;
+    border-radius: 60px;
+    z-index:9000;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .next:hover,
+  .prev:hover{
+    opacity: .3;
+  }
+  .next{
+    left:96%;
+  }
+  .prev{
+    left: 1%;
+  }
+  .banner-dots{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    li{
+      float: left;
+      margin-right: 20px;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      background-color: #fff;
+      opacity: 0.5;
+    }
+    .cur{
+      width: 30px;
+      opacity: 1;
+      background-color:$backcolor;
+      animation: dotChange .5s  linear;
+    }
+    @keyframes dotChange {
+      0%{
+        opacity: 0.5;
+        width: 15px;
+      }
+      100%{
+        opacity: 1;
+        width: 30px;
+      }
     }
   }
 }
