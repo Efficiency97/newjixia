@@ -12,7 +12,9 @@ a {
   border: 2px solid #ffbf08;
   display: none;
   z-index: 10000;
-  padding: 60px; }
+  padding: 60px;
+  left: 50%;
+  margin-left: -310px; }
 
 .login-container div {
   box-sizing: border-box; }

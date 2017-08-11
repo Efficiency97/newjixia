@@ -1,7 +1,7 @@
 
 $('.page_first').hover(
 	function () {
-		$('.page_border').css({'width':'85px','left':'630px'})
+		$('.page_border').css({'width':'85px','left':'480px'})
 	},
 	function () {
 		$('.page_border').css({'width':'0px','left':'0px'})
@@ -9,7 +9,7 @@ $('.page_first').hover(
 );
 $('.page_type').hover(
 	function () {
-		$('.page_border').css({'width':'105px','left':'745px'})
+		$('.page_border').css({'width':'105px','left':'595px'})
 	},
 	function () {
 		$('.page_border').css({'width':'0px','left':'0px'})
@@ -17,7 +17,7 @@ $('.page_type').hover(
 );
 $('.page_release').hover(
 	function () {
-		$('.page_border').css({'width':'105px','left':'893px'})
+		$('.page_border').css({'width':'105px','left':'745px'})
 	},
 	function () {
 		$('.page_border').css({'width':'0px','left':'0px'})
