@@ -84,8 +84,10 @@ a {
   background-color: #fff;
   border: 2px solid #ffbf08;
   display: none;
-  z-index: 9999;
-  padding: 60px; }
+  z-index: 10001;
+  padding: 60px;
+  left: 50%;
+  margin-left: -310px; }
 
 .registration-container div {
   box-sizing: border-box; }

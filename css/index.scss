@@ -25,6 +25,7 @@ $backcolor: #ffbf08;
 .nav1{
   background-color: rgba(61, 68, 74, 0.74);
   width: 100%;
+  min-width: 1500px;
   height:80px;
   display:block;
   z-index: 100000;
@@ -164,7 +165,8 @@ $backcolor: #ffbf08;
 //banner
 .banner{
   margin: 0 auto;
-  width: 1833px;
+  width: 100%;
+  min-width: 1500px;
   height: 420px;
   background-color: #666;
   position: relative;

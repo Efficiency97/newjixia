@@ -89,8 +89,10 @@ $backcolor: #ffbf08;
   background-color: #fff;
   border: 2px solid $backcolor;
   display:none;
-  z-index: 9999;
+  z-index: 10001;
   padding: 60px;
+  left: 50%;
+  margin-left: -310px;
 }
 .registration-container div{
   box-sizing: border-box;

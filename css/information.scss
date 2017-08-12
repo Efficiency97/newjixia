@@ -1,0 +1,116 @@
+@import "index.css";
+@import "login.css";
+$backcolor: #ffbf08;
+.main{
+  width: 100%;
+  position: relative;
+  .main-bd{
+    width: 1090px;
+    margin: 0 auto;
+  }
+  .info-title{
+    font-size:14px;
+    line-height: 14px;
+    a{
+      color: #666666;
+    }
+    a:hover{
+      color: $backcolor;
+    }
+  }
+  .info-buy{
+    margin-top: 30px;
+
+    .buy-leftslide{
+      width: 530px;
+      height: 430px;
+      overflow: hidden;
+      float: left;
+      .buy_img{
+        width: 430px;
+        height: 430px;
+        float: left;
+        background-color: #cccccc;
+      }
+      .buy_list{
+        float: left;
+        width: 78px;
+        height: 430px;
+        margin-left: 16px;
+        ul.list_wrap{
+          width: 78px;
+          height: 430px;
+          li{
+            width: 78px;
+            height: 78px;
+            margin-bottom: 10px;
+            background-color: #cccccc;
+          }
+          .list_border{
+            border: 2px solid $backcolor;
+          }
+        }
+      }
+    }
+    .buy-rightslide{
+      float: left;
+      width: 560px;
+      height: 430px;
+      box-sizing: border-box;
+      padding: 10px 40px;
+      .buy_infoname{
+        color: #666 ;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .buy_infocontent{
+        width: 100%;
+        height: 150px;
+        background-color: rgba(171, 171, 171, 0.2);
+        margin-top: 30px;
+        box-sizing: border-box;
+        padding: 6px 12px ;
+        .buy_contentprice{
+          .content_price{
+            font-size: 28px;
+            color: #ff1506;
+            margin-left: 10px;
+          }
+        }
+        .buy_content{
+          margin-top: 10px;
+        }
+        .content_1{
+          font-size:15px;
+          color: #666666;
+        }
+
+      }
+      .buy_infoseller{
+        .seller_1{
+          font-size: 14px;
+          color: #666666;
+          margin-left: 12px;
+        }
+      }
+      .buy_button{
+        width: 150px;
+        margin: 120px auto;
+        .buy_button1{
+          display: inline-block;
+          width: 150px;
+          height:50px;
+          border:none;
+          box-shadow: none;
+          background-color: $backcolor;
+          text-align: center;
+          color: #ffffff;
+          font-size: 20px;
+          line-height: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+

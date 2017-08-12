@@ -11,7 +11,7 @@ $(window).load(function () {
 	$(window).resize(function () {
 		var centerTop=($(window).height()-$(".login-container,.registration-container").height())/2;
 		var centerLeft=($(window).width()-$(".login-container,.registration-container").width())/2;
-		// $(".login-container,.registration-container").css('left',centerLeft+"px").css('top',centerTop+"px");
+		$(".login-container,.registration-container").css('top',centerTop+"px").css('left',centerLeft+'px').css('margin-left','0');
 	});
 	$(".login").click(function () {
 		$(".login-container").css('display','block');
