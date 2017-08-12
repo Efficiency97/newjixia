@@ -100,14 +100,19 @@ $backcolor: #ffbf08;
           display: inline-block;
           width: 150px;
           height:50px;
-          border:none;
           box-shadow: none;
           background-color: $backcolor;
+          box-sizing: border-box;
+          border: 1px solid $backcolor;
           text-align: center;
           color: #ffffff;
           font-size: 20px;
           line-height: 50px;
           cursor: pointer;
+        }
+        .buy_button1:hover{
+          background-color: #fff !important;
+          color: $backcolor;
         }
       }
     }

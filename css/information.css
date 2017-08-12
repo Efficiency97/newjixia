@@ -77,13 +77,17 @@
           display: inline-block;
           width: 150px;
           height: 50px;
-          border: none;
           box-shadow: none;
           background-color: #ffbf08;
+          box-sizing: border-box;
+          border: 1px solid #ffbf08;
           text-align: center;
           color: #ffffff;
           font-size: 20px;
           line-height: 50px;
           cursor: pointer; }
+        .main .info-buy .buy-rightslide .buy_button .buy_button1:hover {
+          background-color: #fff !important;
+          color: #ffbf08; }
 
 /*# sourceMappingURL=information.css.map */
