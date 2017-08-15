@@ -75,6 +75,7 @@
         margin: 120px auto; }
         .main .info-buy .buy-rightslide .buy_button .buy_button1 {
           display: inline-block;
+          opacity: 1;
           width: 150px;
           height: 50px;
           box-shadow: none;
