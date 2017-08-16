@@ -54,6 +54,14 @@ a {
   top: 30px;
   position: absolute;
   transition: width .3s linear; }
+.page-area .page_release {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #ffbf08;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center; }
 .page-area .page_item {
   margin-left: 500px; }
   .page-area .page_item .page_border {

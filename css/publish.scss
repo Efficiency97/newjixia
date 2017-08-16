@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgba(205, 205, 205, 0.6);
+  font-size: 100%;
+  font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+  width: 100%;
+  height: 100%;
+
+}
+//颜色
+$backcolor: #ffbf08;
+//表单样式
+.input{
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  /* background-color: #fff; */
+  border: 1px solid rgba(204, 204, 204, 0.26);
+  display: inline-block;
+  font-size: 1em;
+  vertical-align: middle;
+  padding: 3px 10px;
+  margin-left: -11px;
+  option{
+    color: #000;
+    font-size: 1.2em;
+  }
+}
+.input:focus{
+  outline: none;
+  border: 1px solid $backcolor;
+  background-color: #ffffff !important;
+}
+//表单前的提示
+.inputPrompt{
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  background-color: rgba(204, 204, 204, 0.15);
+  text-align: center;
+  line-height: 40px;
+  font-size:0.8em;
+}
+.pubheader{
+  width: 100%;
+  min-width: 1050px;
+  height: 80px;
+  background-color: $backcolor;
+}
+//main
+.pubmain{
+  margin: 0 auto;
+  width: 1050px;
+  height: 100%;
+  background-color: #fff;
+  padding: 10px;
+  .addphoto-box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid $backcolor;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .pho_icon{
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      border: 1px solid $backcolor;
+      text-align: center;
+      line-height: 30px;
+      font-size: 2em;
+      color: $backcolor;
+    }
+    .pho_describe{
+      text-align: center;
+      line-height: 30px;
+      font-size: 1em;
+      color: $backcolor;
+    }
+  }
+  //商品分类
+  .addcontent-box{
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    select:focus{
+      outline: none;
+      border: 1px solid $backcolor;
+      background-color: #ffffff !important;
+    }
+  }
+  //商品名称
+  .addname-box{
+    @extend .addcontent-box;
+    input{
+      width: 500px;
+    }
+  }
+  //商品详情
+  .adddetails-box{
+    @extend .addcontent-box;
+    .long{
+      display: block;
+      width:690px;
+    }
+    .area{
+      display: block;
+      width: 690px;
+      height: 200px;
+      margin: 0;
+    }
+  }
+}
