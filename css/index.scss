@@ -44,6 +44,11 @@ $backcolor: #ffbf08;
     //@media screen and (max-width:950px){
     //  width:300px;
     //}
+    img{
+      position: relative;
+      margin-left: 155px;
+      margin-top: 15px;
+    }
   }
   .logo_bgc:after{
     position: absolute;

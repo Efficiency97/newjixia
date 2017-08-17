@@ -13,12 +13,16 @@ body {
   width: 100%;
   height: 100%; }
 
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
 .input {
   width: 200px;
   height: 40px;
   background-color: #fff;
   /* background-color: #fff; */
-  border: 1px solid rgba(204, 204, 204, 0.26);
+  border: 1px solid rgba(204, 204, 204, 0.4);
   display: inline-block;
   font-size: 1em;
   vertical-align: middle;
@@ -33,11 +37,14 @@ body {
   border: 1px solid #ffbf08;
   background-color: #ffffff !important; }
 
+.input:hover {
+  border: 1px solid #ffbf08 !important; }
+
 .inputPrompt {
   display: inline-block;
   width: 130px;
   height: 40px;
-  background-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.25);
   text-align: center;
   line-height: 40px;
   font-size: 0.8em; }
@@ -53,7 +60,8 @@ body {
   width: 1050px;
   height: 100%;
   background-color: #fff;
-  padding: 10px; }
+  padding: 10px;
+  padding-right: 0; }
   .pubmain .addphoto-box {
     width: 200px;
     height: 200px;
@@ -77,16 +85,21 @@ body {
       line-height: 30px;
       font-size: 1em;
       color: #ffbf08; }
-  .pubmain .addcontent-box, .pubmain .addname-box, .pubmain .adddetails-box {
+  .pubmain .addcontent-box, .pubmain .addname-box, .pubmain .adddetails-box, .pubmain .addprice-box, .pubmain .addherf-box, .pubmain .addpay-box, .pubmain .address-box, .pubmain .addcontect-box1,
+  .pubmain .addcontect-box2,
+  .pubmain .addcontect-box3 {
     width: 700px;
     margin: 0 auto;
-    padding: 10px; }
-    .pubmain .addcontent-box select:focus, .pubmain .addname-box select:focus, .pubmain .adddetails-box select:focus {
+    padding: 10px;
+    padding-right: 0; }
+    .pubmain .addcontent-box select:focus, .pubmain .addname-box select:focus, .pubmain .adddetails-box select:focus, .pubmain .addprice-box select:focus, .pubmain .addherf-box select:focus, .pubmain .addpay-box select:focus, .pubmain .address-box select:focus, .pubmain .addcontect-box1 select:focus,
+    .pubmain .addcontect-box2 select:focus,
+    .pubmain .addcontect-box3 select:focus {
       outline: none;
       border: 1px solid #ffbf08;
       background-color: #ffffff !important; }
   .pubmain .addname-box input {
-    width: 500px; }
+    width: 560px; }
   .pubmain .adddetails-box .long {
     display: block;
     width: 690px; }
@@ -94,6 +107,64 @@ body {
     display: block;
     width: 690px;
     height: 200px;
-    margin: 0; }
+    margin: 0;
+    border: 1px solid rgba(204, 204, 204, 0.8);
+    border-top: 0px; }
+  .pubmain .addprice-box {
+    padding-right: 0; }
+    .pubmain .addprice-box .price_now {
+      display: inline-block; }
+    .pubmain .addprice-box .price_base {
+      display: inline-block;
+      margin-left: 20px; }
+  .pubmain .addbasebuy-box {
+    width: 680px;
+    height: 35px;
+    margin: 0 auto; }
+    .pubmain .addbasebuy-box .openherf, .pubmain .addbasebuy-box .closeherf {
+      display: block;
+      width: 200px;
+      height: 35px;
+      background-color: #ffbf08;
+      text-align: center;
+      line-height: 35px;
+      font-size: 1em;
+      color: #ffffff;
+      cursor: pointer; }
+    .pubmain .addbasebuy-box .closeherf {
+      background-color: rgba(255, 60, 26, 0.93); }
+  .pubmain .addherf-box {
+    display: none; }
+    .pubmain .addherf-box input {
+      width: 560px; }
+  .pubmain .addpay-box {
+    line-height: 35px;
+    font-size: 0.8em; }
+    .pubmain .addpay-box input {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px; }
+  .pubmain .address-box input {
+    width: 560px; }
+  .pubmain .addcontect-box1 input,
+  .pubmain .addcontect-box2 input,
+  .pubmain .addcontect-box3 input {
+    width: 560px; }
+
+.mian-button {
+  width: 700px;
+  height: 50px;
+  margin: 50px auto 30px; }
+  .mian-button .button {
+    width: 700px;
+    height: 35px;
+    background-color: #ffbf08;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=publish.css.map */

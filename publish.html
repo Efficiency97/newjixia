@@ -5,9 +5,12 @@
     <title>我要发布</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/publish.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
-<div class="pubheader"></div>
+<div class="pubheader">
+
+</div>
 <div class="pubmain">
     <div class="main-addinfo">
         <div class="addphoto-box">
@@ -15,27 +18,101 @@
             <sapn class="pho_describe">添加照片</sapn>
         </div>
         <div class="addcontent-box">
-                <span class="inputPrompt">商品分类</span>
-                <select name="" id="classList" class="input">
-                    <option value="商品分类">1111</option>
-                    <option value="商品分类">2222</option>
-                    <option value="商品分类">商品分类</option>
-                    <option value="商品分类">商品分类</option>
-                    <option value="商品分类">商品分类</option>
-                    <option value="商品分类">商品分类</option>
-                    <option value="商品分类">商品分类</option>
-                </select>
+            <span class="inputPrompt">商品分类</span>
+            <select name="" id="classList" class="input">
+                <option value="商品分类">1111</option>
+                <option value="商品分类">2222</option>
+                <option value="商品分类">商品分类</option>
+                <option value="商品分类">商品分类</option>
+                <option value="商品分类">商品分类</option>
+                <option value="商品分类">商品分类</option>
+                <option value="商品分类">商品分类</option>
+            </select>
         </div>
         <div class="addname-box">
-                <span class="inputPrompt">商品名称</span>
-                <input type="text" class="input" placeholder="请输入商品名称">
+            <span class="inputPrompt">商品名称</span>
+            <input type="text" class="input" placeholder="请输入商品名称">
         </div>
         <div class="adddetails-box">
-                <span class="inputPrompt long">商品名称</span>
-                <textarea  class="input area" placeholder="请输入商品名称"></textarea>
+            <span class="inputPrompt long">商品详情</span>
+            <textarea  class="input area" placeholder="请输入商品详情"></textarea>
         </div>
-
+        <!--价格-->
+        <div class="addprice-box">
+            <div class="price_now">
+                <span class="inputPrompt">价格</span>
+                <input type="number" class="input" placeholder="请输入价格">
+            </div>
+            <div class="price_base">
+                <span class="inputPrompt">原价</span>
+                <input type="number" class="input" placeholder="请输入原价">
+            </div>
+        </div>
+        <!--购买链接按钮-->
+        <div class="addbasebuy-box">
+            <div id="buyBase" class="openherf">添加原购买链接</div>
+        </div>
+        <!--够买链接-->
+        <div class="addherf-box" id="buyHerf">
+            <span class="inputPrompt long">原购买链接</span>
+            <input type="text" class="input" placeholder="请输入商品名称">
+        </div>
+        <!--交易方式-->
+        <div class="addpay-box">
+            <span class="inputPrompt long">交易方式</span>
+            <input type="radio" name="pay" class="" value="1">线上交易
+            <input type="radio" name="pay" class="" value="2">线下交易
+            <input type="radio" name="pay" class="" value="3" checked>线上交易/线下交易
+        </div>
+        <!--交易地址-->
+        <div class="address-box">
+            <span class="inputPrompt">交易地址</span>
+            <input type="text" class="input" placeholder="请输入交易地址">
+        </div>
+        <!--联系方式-->
+        <div class="addcontect-box1">
+            <span class="inputPrompt">手机号</span>
+            <input type="text" class="input" placeholder="请输入手机号">
+        </div>
+        <div class="addcontect-box2">
+            <span class="inputPrompt">微信号</span>
+            <input type="text" class="input" placeholder="请输入微信号">
+        </div>
+        <div class="addcontect-box3">
+            <span class="inputPrompt">QQ号</span>
+            <input type="text" class="input" placeholder="请输入QQ号">
+        </div>
+    </div>
+    <div class="mian-button">
+        <div class="button">发布</div>
     </div>
 </div>
+
+<script>
+	var buyBase=$("#buyBase");
+	buyBase.click(function () {
+		var a=buyBase.prop('class');
+		var buyHerf=$('#buyHerf');
+		if(a=='closeherf'){
+//			$(this).removeClass('closeherf').addClass('openherf').html('添加原链接');
+			$(this).prop('class','openherf').html('添加原链接')
+			buyHerf.css('display','none')
+		}else if(a=='openherf'){
+//			$(this).removeClass('openherf').addClass('closeherf').html('关闭链接');
+			$(this).prop('class','closeherf').html('关闭链接')
+			buyHerf.css('display','block')
+
+		}
+	});
+	//	buyOpen.click(function () {
+	//		buyBase.addClass('closeherf').removeClass('openherf');
+	//		buyBase.html('关闭链接');
+	//	});
+	//	buyClose.hover(function () {
+	//		alert('kk');
+	//		buyBase.addClass('openherf').removeClass('closeherf');
+	//		buyBase.html('添加原购买链接');
+	//	})
+</script>
 </body>
 </html>

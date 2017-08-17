@@ -13,6 +13,10 @@ body{
   height: 100%;
 
 }
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
 //颜色
 $backcolor: #ffbf08;
 //表单样式
@@ -21,7 +25,7 @@ $backcolor: #ffbf08;
   height: 40px;
   background-color: #fff;
   /* background-color: #fff; */
-  border: 1px solid rgba(204, 204, 204, 0.26);
+  border: 1px solid rgba(204, 204, 204, 0.4);
   display: inline-block;
   font-size: 1em;
   vertical-align: middle;
@@ -37,12 +41,15 @@ $backcolor: #ffbf08;
   border: 1px solid $backcolor;
   background-color: #ffffff !important;
 }
+.input:hover{
+  border: 1px solid $backcolor !important;
+}
 //表单前的提示
 .inputPrompt{
   display: inline-block;
   width: 130px;
   height: 40px;
-  background-color: rgba(204, 204, 204, 0.15);
+  background-color: rgba(204, 204, 204, 0.25);
   text-align: center;
   line-height: 40px;
   font-size:0.8em;
@@ -60,6 +67,7 @@ $backcolor: #ffbf08;
   height: 100%;
   background-color: #fff;
   padding: 10px;
+  padding-right: 0;
   .addphoto-box{
     width: 200px;
     height: 200px;
@@ -91,6 +99,7 @@ $backcolor: #ffbf08;
     width: 700px;
     margin: 0 auto;
     padding: 10px;
+    padding-right: 0;
     select:focus{
       outline: none;
       border: 1px solid $backcolor;
@@ -101,7 +110,7 @@ $backcolor: #ffbf08;
   .addname-box{
     @extend .addcontent-box;
     input{
-      width: 500px;
+      width: 560px;
     }
   }
   //商品详情
@@ -116,6 +125,95 @@ $backcolor: #ffbf08;
       width: 690px;
       height: 200px;
       margin: 0;
+      border: 1px solid rgba(204, 204, 204, 0.8);
+      border-top:0px;
     }
+  }
+  //商品价格
+  .addprice-box{
+    @extend .addcontent-box;
+    padding-right: 0;
+    //现价
+    .price_now{
+      display: inline-block;
+    }
+    //原价
+    .price_base{
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  //购买链接按钮
+  .addbasebuy-box{
+    width:680px;
+    height: 35px;
+    margin: 0 auto;
+    .openherf{
+      display: block;
+      width: 200px;
+      height: 35px;
+      background-color: $backcolor;
+      text-align: center;
+      line-height: 35px;
+      font-size: 1em;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    .closeherf{
+      @extend .openherf;
+      background-color: rgba(255, 60, 26, 0.93);
+    }
+  }
+  //购买链接
+  .addherf-box{
+    @extend .addcontent-box;
+    display: none;
+    input{
+      width: 560px;
+    }
+  }
+  //交易方式
+  .addpay-box {
+    @extend .addcontent-box;
+    line-height: 35px;
+    font-size: 0.8em;
+    input {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  }
+  //交易地址
+  .address-box{
+    @extend .addcontent-box;
+    input{
+      width: 560px;
+    }
+  }
+  //联系方式
+  .addcontect-box1,
+  .addcontect-box2,
+  .addcontect-box3{
+    @extend .addcontent-box;
+    input{
+      width: 560px;
+    }
+  }
+}
+.mian-button{
+  width: 700px;
+  height: 50px;
+  margin: 50px auto 30px;
+  .button{
+    width: 700px;
+    height: 35px;
+    background-color: $backcolor;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
   }
 }
