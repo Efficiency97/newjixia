@@ -11,7 +11,8 @@ body {
   font-size: 100%;
   font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -156,7 +157,7 @@ a {
 .mian-button {
   width: 700px;
   height: 50px;
-  margin: 50px auto 30px; }
+  margin: 20px auto 30px; }
   .mian-button .button {
     width: 700px;
     height: 35px;
