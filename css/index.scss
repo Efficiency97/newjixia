@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
 }
+html{
+  max-width: 100%;
+}
 body{
   font-family:'微软雅黑';
   //overflow-x: hidden;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 ul{
@@ -15,8 +18,26 @@ a{
   text-decoration: none;
 }
 $backcolor: #ffbf08;
+
+
+
+
 //header部分
+.header{
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: rgba(61, 68, 74, 0.74);
+  height: 80px;
+  border: 1px solid transparent;
+}
+
 .navbar-header{
+  width: 100%;
+  height: 100%;
   .logo_bgc{
     width:400px;
     height:80px;
@@ -24,12 +45,6 @@ $backcolor: #ffbf08;
     position: absolute;
     top: 0;
     z-index: 51;
-    //@media screen and (min-width:950px){
-    //  width: 30%;
-    //}
-    //@media screen and (max-width:950px){
-    //  width:300px;
-    //}
   }
   .logo_bgc:after{
     position: absolute;
@@ -43,22 +58,26 @@ $backcolor: #ffbf08;
     border-top-color: #ffbf08;
   }
 }
-.navbar-collapse{
-  .page_bgc{
+.navbar-collapse {
+  //width: 100%;
+  //height: 100%;
+  .page_bgc {
+    box-sizing: border-box;
     position: absolute;
     background-color: rgba(82, 82, 82, 0.9);
-    width: 100% ;
+    width: 100%;
     height: 50px;
     z-index: 50;
+    left: 0;
     top: 30px;
     transition: width .3s linear;
   }
-  .page_item{
-    margin-left:500px;
+  .page_item {
+    margin-left: 500px;
     height: 50px;
-    min-width: 1000px;
+    min-width: 465px;
     padding: 6px;
-    a{
+    a {
       position: relative;
       display: block;
       float: left;
@@ -67,7 +86,7 @@ $backcolor: #ffbf08;
       z-index: 10000;
       color: #ffffff;
     }
-    .page_release{
+    .page_release {
       width: 130px;
       height: 40px;
       border-radius: 5px;
@@ -77,67 +96,67 @@ $backcolor: #ffbf08;
       text-align: center;
     }
   }
-  .type_menu{
+  .type_menu {
     width: 200px;
-    height:380px;
+    height: 380px;
     position: absolute;
-    left:555px;
+    left: 555px;
     top: 50px;
     background-color: #575757;
     padding: 10px 20px;
     display: none;
     box-sizing: border-box;
-    li{
+    li {
       width: 100%;
       height: 50px;
       //text-align: center;
-      a{
+      a {
         width: 100%;
         text-align: center;
         line-height: 50px;
       }
     }
-    li:hover{
+    li:hover {
       background-color: #494949;
-      a{
+      a {
         color: $backcolor;
       }
     }
   }
-  .page_search{
+  .page_search {
     width: 400px;
     height: 30px;
     position: absolute;
     right: 200px;
     top: 10px;
-    .search_text{
-      width: 400px;
-      height:30px;
+    .search_text {
+      width: 100%;
+      height: 100%;
       background-color: #919191;
-      border:none;
-      border-radius:10px;
+      border: none;
+      border-radius: 10px;
       box-sizing: border-box;
       padding: 0 55px;
       //字体设置
-      font-size:18px;
+      font-size: 18px;
       color: #ffffff;
       line-height: 30px;
     }
-    input.search_text:focus{
+    input.search_text:focus {
       outline: none;
     }
-    img{
+    img {
       position: relative;
       left: 15px;
-      top:-24px;
+      top: -24px;
       opacity: 0.6;
     }
   }
-  
 }
 .log-area{
   ul{
     margin-right: 30px;
+    margin-top:-82px;
     @media screen and (max-width: 950px) {
       color: $backcolor;
       display: none;

@@ -3,9 +3,27 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-body {
-  margin: 0; }
+.container-fluid {
+  width: 100%; }
 
+@media (max-width: 1523px) {
+  .page_search {
+    left: 900px; } }
+@media (max-width: 980px) {
+  .page_search {
+    width: 50px !important; }
+
+  .search_text {
+    padding: 0 !important; } }
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
@@ -162,61 +180,5 @@ body {
 
   .col-md-offset-0 {
     margin-left: 0; } }
-.container {
-  margin-right: auto;
-  margin-left: auto; }
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px; } }
-@media (min-width: 992px) {
-  .container {
-    width: 970px; } }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
-@media (max-width: 1523px) {
-  .page_search {
-    left: 900px; } }
-.row {
-  margin-right: -15px;
-  margin-left: -15px; }
-
-.navbar {
-  position: relative;
-  width: 100%;
-  background-color: rgba(61, 68, 74, 0.74);
-  height: 80px;
-  border: 1px solid transparent; }
-
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left; } }
-.navbar-header:before,
-.navbar-header:after {
-  display: block;
-  content: " "; }
-
-.navbar-header:after {
-  clear: both; }
-
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left; } }
-.navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
-  overflow-x: visible;
-  -webkit-overflow-scrolling: touch;
-  border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
-
-@media (min-width: 768px) {
-  .navbar-collapse {
-    width: auto;
-    border-top: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none; } }
 
 /*# sourceMappingURL=base.css.map */
