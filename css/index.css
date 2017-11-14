@@ -9,7 +9,8 @@ html {
 body {
   font-family: '微软雅黑';
   max-width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 ul {
   list-style: none; }
@@ -146,17 +147,25 @@ a {
 .banner {
   margin: 0 auto;
   width: 100%;
-  min-width: 1500px;
   height: 420px;
   background-color: #666;
   position: relative;
   overflow-x: hidden; }
   .banner ul.banner-content {
-    width: 11520px;
+    width: 100%;
     height: 100%;
-    overflow-y: hidden; }
+    overflow: hidden; }
     .banner ul.banner-content li {
+      width: 100%;
+      height: 100%;
       float: left; }
+      .banner ul.banner-content li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .banner ul.banner-content li a img {
+          width: 100%;
+          height: 100%; }
   .banner .next,
   .banner .prev {
     position: absolute;
@@ -202,13 +211,12 @@ a {
     opacity: 1;
     width: 30px; } }
 .main {
-  width: 100%;
   position: relative;
   padding: 30px;
   margin: 0 auto;
   box-sizing: border-box; }
   .main .hot-area, .main .new-area {
-    width: 1465px;
+    width: 95%;
     margin: 10px auto; }
   .main .hot_title, .main .new_title {
     text-align: center;
@@ -221,8 +229,9 @@ a {
     height: 350px;
     border: 3px solid #ffbf08;
     box-sizing: border-box;
-    padding: 25px 60px; }
+    padding: 25px 4.2%; }
   .main .hot_content, .main .new_content {
+    width: 100%;
     margin: 0 auto;
     height: 300px; }
   .main .hot_1, .main .new_1,

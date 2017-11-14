@@ -53,3 +53,22 @@ $(function(){
 		},4000)
 	});
 });
+
+
+
+
+
+
+//
+// var dots=$(".banner-dots")[0];
+// var lis=dots.getElementsByTagName("li")
+// var funny=function (i) {
+// 	lis[i].onclick=function	(){
+// 		alert(i+1);
+// 		var b=i+1;
+// 		this.eq(b).addClass('cur').siblings().removeClass('cur');
+// 	}
+// };
+// for(var i=0;i<lis.length;i++){
+// 	funny(i);
+// }
