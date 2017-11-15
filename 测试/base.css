@@ -11,10 +11,7 @@ html {
     left: 670px !important; } }
 @media (max-width: 1180px) {
   .page_search {
-    width: 200px !important; }
-
-  .search_text {
-    padding: 0 !important; } }
+    width: 200px !important; } }
 @media (min-width: 0px) {
   .main {
     width: 1600px; }
