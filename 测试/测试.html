@@ -5,36 +5,29 @@
     <title>
         RunJS 演示代码
     </title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .a{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .b{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+    </style>
     <script>
-			onload = function() {
 
-				var lis = document.getElementsByTagName("li");
-				alert(lis)
-				var funny = function(i){
-					lis[i].onclick = function(){
-						alert("第" + (i+1) + "个");
-					}
-				}
-				for(var i=0;i<lis.length;i++){
-					funny(i);
-				}
-			}
     </script>
 </head>
 <body>
-<ul>
-    <li>
-        1
-    </li>
-    <li>
-        2
-    </li>
-    <li>
-        3
-    </li>
-    <li>
-        4
-    </li>
-</ul>
+<div class="a"></div>
+<div class="b"></div>
 </body>
 </html>
