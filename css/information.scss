@@ -1,16 +1,28 @@
 @import "index.css";
 @import "login.css";
 $backcolor: #ffbf08;
-.main{
-  width: 100%;
+.main-buy{
   position: relative;
+  margin:0 auto;
+  padding: 60px 0;
+  @media (min-width:768px){
+    width: 750px;
+  }
+
+  @media (min-width:962px){
+    width:980px;
+  }@media (min-width: 1200px){
+  width: 980px;
+}
+
   .main-bd{
-    width: 1090px;
+    width: 100%;
     margin: 0 auto;
   }
   .info-title{
     font-size:14px;
     line-height: 14px;
+    padding-left: 20px;
     a{
       color: #666666;
     }
@@ -20,12 +32,12 @@ $backcolor: #ffbf08;
   }
   .info-buy{
     margin-top: 30px;
-
     .buy-leftslide{
       width: 530px;
       height: 430px;
       overflow: hidden;
       float: left;
+      padding-left:20px;
       .buy_img{
         width: 430px;
         height: 430px;
@@ -54,17 +66,17 @@ $backcolor: #ffbf08;
     }
     .buy-rightslide{
       float: left;
-      width: 560px;
+      width: 430px;
       height: 430px;
       box-sizing: border-box;
-      padding: 10px 40px;
+      padding: 10px 0px 10px 40px;
       .buy_infoname{
         color: #666 ;
         font-size: 20px;
         line-height: 30px;
       }
       .buy_infocontent{
-        width: 100%;
+        width: 93%;
         height: 150px;
         background-color: rgba(171, 171, 171, 0.2);
         margin-top: 30px;

@@ -52,17 +52,16 @@ a {
 
 .pubheader {
   width: 100%;
-  min-width: 1050px;
-  height: 80px;
   background-color: #ffbf08; }
 
 .pubmain {
   margin: 0 auto;
-  width: 1050px;
   height: 100%;
   background-color: #fff;
-  padding: 10px;
-  padding-right: 0; }
+  padding: 10px 0 10px 10px; }
+  .pubmain .main-addinfo {
+    width: 100%;
+    height: 100%; }
   .pubmain .addphoto-box {
     width: 200px;
     height: 200px;
@@ -91,8 +90,7 @@ a {
   .pubmain .addcontect-box3 {
     width: 700px;
     margin: 0 auto;
-    padding: 10px;
-    padding-right: 0; }
+    padding: 10px 0 10px 10px; }
     .pubmain .addcontent-box select:focus, .pubmain .addname-box select:focus, .pubmain .adddetails-box select:focus, .pubmain .addprice-box select:focus, .pubmain .addherf-box select:focus, .pubmain .addpay-box select:focus, .pubmain .address-box select:focus, .pubmain .addcontect-box1 select:focus,
     .pubmain .addcontect-box2 select:focus,
     .pubmain .addcontect-box3 select:focus {

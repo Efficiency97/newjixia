@@ -76,5 +76,23 @@ html {
   .new_4,
   .bd_num:nth-child(4) {
     margin-right: 79px !important; } }
+@media (min-width: 0px) {
+  .pubheader {
+    height: 40px; }
+
+  .pubmain {
+    width: 768px; } }
+@media (min-width: 768px) {
+  .pubheader {
+    height: 40px; }
+
+  .pubmain {
+    width: 768px; } }
+@media (min-width: 992px) {
+  .pubmain {
+    width: 1050px; } }
+@media (min-width: 1200px) {
+  .pubmain {
+    width: 1050px; } }
 
 /*# sourceMappingURL=base.css.map */
